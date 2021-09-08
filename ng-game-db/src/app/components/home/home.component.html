@@ -1,1 +1,38 @@
-<p>home works!</p>
+<div class="filters">
+  <mat-form-field>
+    <mat-label>Sort</mat-label>
+    <mat-select panelClass="sort-select">
+      <mat-option value="name">Name</mat-option>
+      <mat-option value="-released">Released</mat-option>
+      <mat-option value="-added">Added</mat-option>
+      <mat-option value="-created">Created</mat-option>
+      <mat-option value="-updated">Updated</mat-option>
+      <mat-option value="-rating">Rating</mat-option>
+      <mat-option value="metacritic">Metacritic</mat-option>
+    </mat-select>
+  </mat-form-field>
+</div>
+
+<div class="games">
+  <ng-container>
+    <div class="game">
+      <div class="game-thumb-container">
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQR7tlQbBkXiHOzaD_aka8I6irzAdHFiRthbHUvz_-8aHoFP58oU9LB46KfgALKMKIcxEk&usqp=CAU"
+          alt="thumbnail"
+          class="game-thumbnail"
+        />
+      </div>
+      <div class="game-description">
+        <p class="game-name">Name</p>
+        <div class="game-platforms">
+          <img
+            class="game-platform"
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Xbox_Logo.svg/372px-Xbox_Logo.svg.png"
+            alt="slug"
+          />
+        </div>
+      </div>
+    </div>
+  </ng-container>
+</div>
